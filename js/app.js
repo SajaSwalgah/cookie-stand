@@ -1,4 +1,3 @@
-
 /////////////////////////////////////Salmon Cookies for Seattle////////////////////////////////////////////
 var Seattle = {
     minCustomersPerHour: 23,
@@ -15,14 +14,16 @@ var Seattle = {
         var hours = ["6am: ","7am: ","8am: ","9am: ","10am: ","11am: ","12pm: "," 1pm: "," 2pm: ","3pm: ",
             "4pm: "," 5pm: ","6pm: "," 7pm: ","Total: "];
         var sum = 0;
-        for (i = 0; i < 14; i++) {
+        for (i = 0; i < hours.length-1; i++) {
             
             var cookiesPerHour = this.forEachHour(Seattle.minCustomersPerHour, Seattle.maxCustomersPerHour) * Seattle.averagePerCustomer;
             sum = sum + cookiesPerHour;
-            hours[i] = hours[i] + Math.ceil(cookiesPerHour);
+            hours[i] = hours[i] + Math.ceil(cookiesPerHour) ;
+           
         }
         hours[14]=hours[14]+ Math.ceil(sum);
-        return hours;
+        console.log(hours);
+                return hours;
     }
 
 
@@ -30,7 +31,7 @@ var Seattle = {
 }
 Seattle.forEachHour(Seattle.minCustomersPerHour, Seattle.maxCustomersPerHour)
 var header1 = document.createElement("h2");
-header1.textContent = "Salmon Cookies for Seattle";
+header1.textContent = " Seattle";
 var contentArea = document.getElementById('list');
 contentArea.appendChild(header1);
 
@@ -38,14 +39,16 @@ var ul = document.createElement('ul');
 
 contentArea.appendChild(ul);
 
-var li = document.createElement('li');
 
-li.textContent = Seattle.cookiesPurchased();
+var cookies =  Seattle.cookiesPurchased();
+for (i =0 ; i<cookies.length ; i++){
+    var li = document.createElement('li');
+li.textContent = cookies[i] + " cookies";
 
 ul.appendChild(li);
-var style = document.createElement('style');
-document.head.appendChild(style);
-style.sheet.insertRule('#list {display: block}');
+
+}
+
 
 
 
@@ -83,19 +86,21 @@ var Tokyo = {
 }
 Tokyo.forEachHour(Tokyo.minCustomersPerHour, Tokyo.maxCustomersPerHour)
 var header1 = document.createElement("h2");
-header1.textContent = "Salmon Cookies for Tokyo";
+header1.textContent = "Tokyo";
 var contentArea = document.getElementById('list');
 contentArea.appendChild(header1);
 
 var ul = document.createElement('ul');
 
 contentArea.appendChild(ul);
-
-var li = document.createElement('li');
-
-li.textContent = Tokyo.cookiesPurchased();
+var cookies =  Tokyo.cookiesPurchased();
+for (i =0 ; i<cookies.length ; i++){
+    var li = document.createElement('li');
+li.textContent =cookies[i] + " cookies";
 
 ul.appendChild(li);
+
+}
 
 
 
@@ -130,7 +135,7 @@ var Dubai = {
 }
 Dubai.forEachHour(Dubai.minCustomersPerHour, Dubai.maxCustomersPerHour)
 var header1 = document.createElement("h2");
-header1.textContent = "Dubai Cookies for Seattle";
+header1.textContent = "Dubai";
 var contentArea = document.getElementById('list');
 contentArea.appendChild(header1);
 
@@ -138,12 +143,14 @@ var ul = document.createElement('ul');
 
 contentArea.appendChild(ul);
 
-var li = document.createElement('li');
-// for (i =0 ; i<15 ; i++){
-li.textContent = Dubai.cookiesPurchased();
+var cookies =  Dubai.cookiesPurchased();
+for (i =0 ; i<cookies.length ; i++){
+    var li = document.createElement('li');
+li.textContent =cookies[i] + " cookies";
+
 ul.appendChild(li);
-// document.write('<br/>');
-//}
+
+}
 
 
 
@@ -178,7 +185,7 @@ var Paris = {
 }
 Paris.forEachHour(Paris.minCustomersPerHour, Paris.maxCustomersPerHour)
 var header1 = document.createElement("h2");
-header1.textContent = "Paris Cookies for Seattle";
+header1.textContent = "Paris";
 var contentArea = document.getElementById('list');
 contentArea.appendChild(header1);
 
@@ -186,12 +193,14 @@ var ul = document.createElement('ul');
 
 contentArea.appendChild(ul);
 
-var li = document.createElement('li');
-
-li.textContent = Paris.cookiesPurchased();
+var cookies =  Paris.cookiesPurchased();
+for (i =0 ; i<cookies.length ; i++){
+    var li = document.createElement('li');
+li.textContent =cookies[i] + " cookies";
 
 ul.appendChild(li);
 
+}
 
 
 /////////////////////////////////////Salmon Cookies for Lima////////////////////////////////////////////
@@ -221,7 +230,6 @@ var Lima = {
     }
 
 
-
 }
 Lima.forEachHour(Lima.minCustomersPerHour, Lima.maxCustomersPerHour)
 
@@ -235,8 +243,11 @@ var ul = document.createElement('ul');
 
 contentArea.appendChild(ul);
 
-var li = document.createElement('li');
-
-li.textContent = Lima.cookiesPurchased();
+var cookies =  Lima.cookiesPurchased();
+for (i =0 ; i<cookies.length ; i++){
+    var li = document.createElement('li');
+li.textContent =cookies[i] + " cookies";
 
 ul.appendChild(li);
+
+}
