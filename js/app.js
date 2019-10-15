@@ -1,5 +1,6 @@
 /////////////////////////////////////Salmon Cookies for Seattle////////////////////////////////////////////
 var Seattle = {
+    location : "Seattle",
     minCustomersPerHour: 23,
     maxCustomersPerHour: 65,
     averagePerCustomer: 6.3,
@@ -57,6 +58,7 @@ ul.appendChild(li);
 
 /////////////////////////////////////Salmon Cookies for Tokyo////////////////////////////////////////////
 var Tokyo = {
+    location : "Tokyo",
     minCustomersPerHour: 3,
     maxCustomersPerHour: 24,
     averagePerCustomer: 1.2,
@@ -106,6 +108,7 @@ ul.appendChild(li);
 
 /////////////////////////////////////Salmon Cookies for Dubai////////////////////////////////////////////
 var Dubai = {
+    location : "Dubai",
     minCustomersPerHour: 11,
     maxCustomersPerHour: 38,
     averagePerCustomer: 3.7,
@@ -156,6 +159,7 @@ ul.appendChild(li);
 
 /////////////////////////////////////Salmon Cookies for Paris////////////////////////////////////////////
 var Paris = {
+    location : "Paris",
     minCustomersPerHour: 20,
     maxCustomersPerHour: 38,
     averagePerCustomer: 2.3,
@@ -205,6 +209,7 @@ ul.appendChild(li);
 
 /////////////////////////////////////Salmon Cookies for Lima////////////////////////////////////////////
 var Lima = {
+    location : "Lima",
     minCustomersPerHour: 2,
     maxCustomersPerHour: 16,
     averagePerCustomer: 4.6,
@@ -235,7 +240,7 @@ Lima.forEachHour(Lima.minCustomersPerHour, Lima.maxCustomersPerHour)
 
 
 var header1 = document.createElement("h2");
-header1.textContent = "Lima Cookies for Seattle";
+header1.textContent = "Lima";
 var contentArea = document.getElementById('list');
 contentArea.appendChild(header1);
 
