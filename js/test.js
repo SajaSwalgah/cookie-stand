@@ -125,7 +125,7 @@ SalmonCookies.prototype.render = function (table) {
 
 ////////////////////////lab08//////////////////////
 
-function submitHandlar (event){
+function submission (event){
   event.preventDefault();
   var location = event.target.location.value;
   var min = parseInt(event.target.min.value);
@@ -143,7 +143,7 @@ renderFooterRow(table);
 
 }
 var form = document.getElementById("insert");
-form.addEventListener('submit', submitHandlar )
+form.addEventListener('submit', submission )
 
 
 
