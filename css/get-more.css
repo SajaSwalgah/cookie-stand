@@ -1,0 +1,107 @@
+body{
+    background-color: lightblue;
+   }
+
+header{
+    padding: 10px;
+    text-align: center;
+    background:  #9fa9a3;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    height: 150px;
+    position: sticky;
+        }
+        
+        header img{
+        float: left;
+        margin-top: 15px;
+        margin-right: 30px;
+        width:250px ;
+      }
+
+      nav {
+        margin: 0px auto;
+        padding: 0px;
+        
+      }
+      
+     
+      
+      header ul li {
+        display: inline-block;
+        margin-top: 30px;
+        margin-right: 75px;
+        font-size: 20px;
+      }
+ul{
+    background-color: rgb(78, 6, 69);
+    margin-bottom: 1px;
+}
+      li {
+          font-weight: bold;
+          padding: 10px 20px 10px 20px;
+          border-style: inherit;
+          background-color: rgb(223, 21, 98);
+          margin-bottom: 25px;
+          color: black;
+      }
+    header div img {
+        float: right;
+        height: 30px;
+        width: 30px;
+        margin-top: 0px;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(78, 6, 69);
+    }
+    .one img{
+
+        float: left;
+        width: 400px;
+        height: 175px;
+        border-radius: 50px;
+        
+     }
+ 
+     .one{
+        margin-top: 20px;
+         width: 1300px;
+         height: 175px;
+         border-style: dashed;
+         border-color: rgb(255, 0, 149);
+        border-radius: 50px;
+        color: rgb(226, 30, 72);
+        padding-bottom: 20px;
+        
+     }
+
+     p{
+         padding-top: 30px;
+         font-size: x-large;
+         font-weight: bold;
+         
+     }
+
+     footer div img {
+        float: right;
+        height: 30px;
+        width: 30px;
+        margin-top: 0px;
+        padding-left: 20px ;
+        padding-top: 15px;
+    }
+    
+        footer p{
+    
+         
+          font-size: 20px;
+          float: left;
+        
+      }
+      footer {
+        background-color: darkslategray;
+        height: 60px;
+      }
